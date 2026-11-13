@@ -1,0 +1,23 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+
+# Enable rewrite engine
+RewriteEngine On
+
+# 1) /anything.html  ->  /anything  (301 redirect, address bar clean rahega)
+#    /index.html     ->  /
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/([^\s?]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 2) Alias: /thank-you  ->  /thankyou
+RewriteRule ^thank-you/?$ /thankyou [R=301,L]
+
+# 3) /privacy-policy -> privacy-policy.html, /terms-and-conditions -> terms-and-conditions.html
+#    (aur baaki sab pages bhi, jinki .html file maujood hai)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
