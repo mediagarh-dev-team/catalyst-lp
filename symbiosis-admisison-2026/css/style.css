@@ -857,6 +857,25 @@ footer,
 
   .mobile-sticky-bar {
     z-index: 99999 !important;
+    padding: 8px 10px !important;
+    gap: 8px;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-sticky-bar .btn {
+    height: 48px;
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    border-radius: 10px !important;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mobile-sticky-bar .btn img {
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0;
   }
 
   .btn-outline-primary {
@@ -906,5 +925,28 @@ footer,
   .filter-btn.active {
     background-color: #000;
     color: #fff;
+  }
+
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .rankings-section,
+  .sch-section,
+  .why-study-section {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+/* ── Mobile sticky bar — extra small screens (≤ 375px) ── */
+@media (max-width: 375px) {
+  .mobile-sticky-bar .btn {
+    font-size: 12px !important;
+    gap: 4px !important;
+  }
+
+  .mobile-sticky-bar .btn i {
+    font-size: 14px;
   }
 }
