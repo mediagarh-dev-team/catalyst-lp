@@ -121,7 +121,7 @@
 .why-badge-label {
   font-size: 12px;
   font-weight: 500;
-  color: #7b3306;
+  color: #8f0d13;
   line-height: 1.35;
 }
 
@@ -136,11 +136,11 @@
 }
 
 .highlight-blue {
-  color: #0066cc;
+  color: #1b2a4a;
 }
 
 .highlight-orange {
-  color: #f36f21;
+  color: #c21119;
 }
 
 /* Card 1 image */
@@ -192,7 +192,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: #06c;
+  color: #1b2a4a;
   margin: 0;
   line-height: 1;
 }
@@ -201,7 +201,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: #06c;
+  color: #1b2a4a;
   margin: 0;
   line-height: 1;
 }
@@ -261,7 +261,7 @@
 .why-stat-big {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
   font-weight: 700;
-  color: #0066cc;
+  color: #1b2a4a;
   line-height: 1;
   margin: 0;
 }
@@ -294,7 +294,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0066cc;
+  color: #1b2a4a;
   border-top: 1px solid #f5f5f5;
   text-decoration: none;
   display: inline-flex;
@@ -306,7 +306,7 @@
 }
 
 .why-cta-link:hover {
-  color: #004fa3;
+  color: #2a406f;
   gap: 10px;
 }
 
@@ -506,6 +506,7 @@
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.6px;
+  color: #999;
 }
 
 .badge-icon-box img {
@@ -559,8 +560,8 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   background: #fff3e8;
-  color: #c45000;
-  border: 1px solid #f5c59a;
+  color: #c21119;
+  border: 1px solid #c2111933;
   border-radius: 20px;
   padding: 4px 10px;
   line-height: 1.4;
@@ -663,7 +664,7 @@
 .sch-emi-cta {
   font-size: 13px;
   font-weight: 600;
-  color: #f36f21;
+  color: #c21119;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -675,10 +676,20 @@
 }
 
 .sch-emi-cta:hover {
-  color: #c85500;
+  color: rgb(162, 85, 30);
   gap: 10px;
 }
-
+.apply-btn-wrapper {
+  border-radius: 800px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #c21119;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  color: white !important;
+}
+.apply-btn-wrapper:hover {
+  background: #70080d !important;
+  color: white !important;
+}
 .sch-emi-cta svg {
   flex-shrink: 0;
   transition: transform 0.2s ease;
@@ -765,13 +776,13 @@
 
 .sch-tile:hover .sch-tile-badge {
   color: #fff;
-  border: 1px solid #f36f21;
-  background: #f36f21;
+  border: 1px solid #c21119;
+  background: #c21119;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
 }
 
 .sch-tile:hover .sch-tile-cat {
-  color: #f36f21;
+  color: #c21119;
 }
 
 .sch-tile-body {
@@ -861,7 +872,7 @@
 .sch-apply-link {
   font-size: 13px;
   font-weight: 600;
-  color: #f36f21;
+  color: #c21119;
   text-decoration: none;
   display: inline-flex;
   align-items: center;

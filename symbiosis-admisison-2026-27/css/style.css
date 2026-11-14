@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #f36f21;
+  --primary-color: #c21119;
   --secondary-color: #e5e5e5;
   --tertiary-color: #111111;
   --quaternary-color: #737373;
@@ -149,7 +149,7 @@ p {
 }
 
 .bg-seventh {
-  background-color: var(--seventh-color) !important;
+  background-color: #c21119 !important;
 }
 
 .text-primary {
@@ -211,7 +211,6 @@ p {
 }
 
 .btn-apply {
-  box-shadow: 0px 4px 6px -4px #0000001a;
   padding: 14px 32px;
   border-radius: 33554400px;
 }
@@ -352,7 +351,7 @@ p {
 }
 
 .steps-line {
-  top: 20%;
+  top: 18%;
   left: 10%;
   right: 10%;
   height: 1px;
@@ -365,7 +364,10 @@ p {
   height: 40px;
   margin: 0 auto 20px auto;
   z-index: 2;
-  box-shadow: 0px 0px 0px 4px #0b273580;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: #c21119;
+  box-shadow: 0 0 0 4px rgba(11, 39, 53, 0.5);
+  color: white !important;
 }
 
 .step-card {
@@ -548,7 +550,7 @@ p {
 
 /* Active state arrow styling (Orange theme) */
 .custom-faq-accordion .accordion-button:not(.collapsed)::after {
-  background-color: #f36f21;
+  background-color: #c21119;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12 10L8 6L4 10' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   transform: none;
   /* Prevents Bootstrap's default 180deg rotation */
@@ -560,7 +562,7 @@ p {
 }
 
 .btn-cta:hover {
-  background-color: #d85e17 !important;
+  background-color: #70080d !important;
 }
 
 .btn-cta:active {
@@ -610,11 +612,11 @@ p {
 }
 
 .badge-icon {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   border-radius: 12px;
-  border: 1px solid #e8e8e8;
-  background: #fafafa;
+  border: 1px solid #f3c6c8;
+  background: #fdf0f0;
 }
 
 .about-img img,
@@ -659,6 +661,16 @@ p {
   line-height: 52.5px;
 }
 
+button {
+  transition: all 0.3s ease-in-out;
+}
+.bottom-cta-btn:hover {
+  background: #fff !important;
+  color: #c21119 !important;
+  box-shadow: 0 1px 2px 0 rgba(255, 105, 0, 0.25);
+  transform: translateY(-4px);
+}
+
 footer,
 .footer-container,
 .copyright-container {
@@ -666,13 +678,13 @@ footer,
 }
 
 .footer-container {
-  padding: 48px 0;
+  padding: 48px 16px;
   gap: 40px;
 }
 
 .admission-card {
   border-radius: 24px;
-  border-top: 4px solid #f36f21;
+  border-top: 4px solid #c21119;
   background: #fff;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 28px;
@@ -725,7 +737,7 @@ footer,
   z-index: 9999;
   height: 60px;
   width: 60px;
-  background-color: var(--primary-color, #f36f21);
+  background-color: var(--primary-color, #c21119);
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -746,7 +758,7 @@ footer,
 }
 
 .sticky-call-btn:hover {
-  background-color: var(--seventh-color, #e65c00);
+  background-color: #70080d;
   color: #ffffff;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
@@ -879,8 +891,8 @@ footer,
   }
 
   .btn-outline-primary {
-    --bs-btn-color: #f36f21;
-    --bs-btn-border-color: #f36f21;
+    --bs-btn-color: #c21119;
+    --bs-btn-border-color: #c21119;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #e65c00;
     --bs-btn-hover-border-color: #e65c00;
